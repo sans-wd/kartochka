@@ -1,0 +1,38 @@
+body{
+    background: #fff;
+}
+.kartonka{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    width: 575px;
+    font-size: 96px;
+    letter-spacing: -7px;
+    line-height: 330px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    display: block;
+    margin: 200px auto;
+
+}
+.kartonka::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    display: inline-block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 345px;
+    background: linear-gradient(#ff9900 50%,#cc0000 50%);
+    box-shadow: 230px 0 0 0 #ff9900, 230px 0 0 0 #cc0000 inset;
+    background-size: 45px 45px;
+}
+.kartonka::after{
+    content: '\00ae';
+    padding-left: 5px;
+    font-size: 30px;
+    font: Helvetica,sans-serif;
+}
